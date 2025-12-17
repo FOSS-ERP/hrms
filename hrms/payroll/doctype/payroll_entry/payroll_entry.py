@@ -835,7 +835,7 @@ class PayrollEntry(Document):
 		for dimension in accounting_dimensions:
 			accounting_dimension = None
 
-			if employee_meta.has_field(dimension):
+			if row.get("party") and employee_meta.has_field(dimension):
 				accounting_dimension = frappe.db.get_value(
 					"Employee", row.get("party"), dimension
 				) or self.get(dimension)
