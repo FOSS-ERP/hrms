@@ -154,17 +154,6 @@ def get_custom_fields():
 				"options": "Department Approver",
 				"insert_after": "leave_approvers",
 			},
-			{
-				"fieldname": "accounting_dimensions_section",
-				"fieldtype": "Section Break",
-				"label": "Accounting Dimensions",
-				"insert_after": "iban",
-			},
-			{
-				"fieldname": "dimension_col_break",
-				"fieldtype": "Column Break",
-				"insert_after": "accounting_dimensions_section",
-			},
 		],
 		"Designation": [
 			{
@@ -285,6 +274,17 @@ def get_custom_fields():
 				"label": _("Payroll Cost Center"),
 				"options": "Cost Center",
 				"insert_after": "salary_cb",
+			},
+			{
+				"fieldname": "accounting_dimensions_section",
+				"fieldtype": "Section Break",
+				"label": "Accounting Dimensions",
+				"insert_after": "iban",
+			},
+			{
+				"fieldname": "dimension_col_break",
+				"fieldtype": "Column Break",
+				"insert_after": "accounting_dimensions_section",
 			},
 		],
 		"Project": [
